@@ -35,7 +35,8 @@
  .dark-text{
     padding: 1%;
     font-weight: 500;
-    font-size: medium;
+    font-size: 3vw;
+    font-family: 'Splash', cursive;
     pointer-events: inherit;
  }
 /******************************************* dark mode ***************************************/
@@ -47,7 +48,7 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: 125%;
-
+        
     }
 
     .hs {
@@ -71,7 +72,8 @@
         background-image: url(https://lh3.googleusercontent.com/drive-viewer/AEYmBYQKemeasDcvh-5Qx6QnSLthAX4QxLIJcu8jvsJ3Lk9Md8lf-nL2EOrBC_Kyqnl8vRva0Qvv1-9JrcBJ3BLYOdR6qbweCQ=s1600);
         background-position: top;
         background-repeat: no-repeat;
-        
+ 
+ 
         background-attachment: fixed;
         background-size: cover;
         min-height: 100vh;
@@ -151,6 +153,10 @@
     background-color: #a00000;
     overflow: hidden;
     padding: 2%;
+    
+    
+    
+    
 }
 
 #logo1,
@@ -209,6 +215,7 @@
 
 .opening-text {
     padding: 10% 0;
+    padding-bottom:  1%;
     text-shadow: 5px 7px 1px rgba(143, 73, 73, 0.665), 5px 7px 1px rgb(0, 0, 0);
     text-align: left;
     font-size: 12vw;
@@ -326,7 +333,11 @@
 
 
 
+#about , #Membership, #nav11, #Event , #project  ,#Glimpse{
+    user-select: none;
+    caret-color: auto;
 
+}
 
 
 
@@ -749,7 +760,7 @@ background-color: #000000f1;color: #ffffff;
 }
 
 .whack-a-mole {
-    background-image: url(https://lh3.googleusercontent.com/drive-viewer/AEYmBYRg96Bm0qytBMMWOZTPBH5QYdOrBrar5wHiAzw6_OjNDHtKPfeHLyWvHLOczpit6evMplsSaRQp-ZIYZeAftHLdcfIL=s2560);
+    background-image: url(https://lh3.googleusercontent.com/drive-viewer/AEYmBYQ_0LvvnZEvs6U5q4YaUq6AFV0o4vVCJLaHUgtGJ2nZRrgdY0tvPXvWTRjjynrVXtxBAySRY_bzbSOm4gqVyfTvephp=s1600);
 }
 
 .Traffic-Light {
