@@ -17,12 +17,34 @@
 }
 
 
+
+
+/******************************************** dark mode *****************************************/
+
+.dark{
+    filter: invert();
+}
+.dark-about , .dark-event ,.dark-Membership ,.dark-project, .dark-glimpse-tag-1 , .dark-glimpse-tag {
+    background-image: linear-gradient(180deg, rgb(7, 78, 52), rgb(37, 22, 54));
+    background-size: contain; 
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: beige;
+    }
+ .dark-text{
+    padding: 1%;
+    font-weight: 500;
+    font-size: medium;
+    pointer-events: inherit;
+ }
+/******************************************* dark mode ***************************************/
+
 @media (max-width: 699px) {
     .pp {
         background-image: url(https://lh3.googleusercontent.com/drive-viewer/AEYmBYRtB3Vkl1ScWc0Bh4k_hYWHFCIYvxlB5lpCyeFK_e87g2aIB4DLMNGWyJ2yYzpf7YN72ZnXnTwczhs2Pyo2EL54wbTB=s1600);
         background-position: top;
         background-repeat: no-repeat;
-        filter: invert();
         background-attachment: fixed;
         background-size: 125%;
 
@@ -255,9 +277,7 @@
 
 }
 
-.opening-logo-1 {
-    visibility: visible;
-}
+
 
 @media (max-width:700px) {
     .opening-logo {
@@ -314,17 +334,14 @@
 #about {
     font-family: 'Zen Maru Gothic', serif;
     font-weight: bolder;
-
     padding: 5% 5%;
     overflow: hidden;
     width: 100vw;
     min-height: 100vh;
     opacity: 1;
-    background-color: #f2e2e8;
     overflow: hidden;
     margin: 0;
     text-align: center;
-    color: black;
     z-index: -1;
 }
 
@@ -424,7 +441,6 @@
 
 .about-content {
     width: 50%;
-    color: #000000fd;
     font-family: 'Zen Maru Gothic', serif;
 }
 
@@ -487,7 +503,7 @@
     overflow-y: hidden;
     margin: 0;
     text-align: center;
-    color: black;
+    
 }
 
 #project::-webkit-scrollbar {
@@ -508,14 +524,14 @@ body::-webkit-scrollbar {
     font-weight: bolder;
     overflow-y: hidden;
     width: 100vw;
-    background-color: #fffcfc00;
+    background-color: #f2e2e8;
     opacity: 1;
 
 
 
     margin: 0;
     text-align: center;
-    color: rgb(0, 0, 0);
+    
 
 }
 
@@ -531,7 +547,7 @@ body::-webkit-scrollbar {
 
 .membership-punch {
     padding-top: 3%;
-    color: #000000;
+   
     font-weight: 900;
 }
 
@@ -551,7 +567,7 @@ body::-webkit-scrollbar {
     font-family: 'Zen Maru Gothic', serif;
 
     width: 100vw;
-
+    background-color: #f2e2e8;
     opacity: 1;
     background-image: url(121.jpeg);
     background-position: top;
@@ -562,19 +578,21 @@ body::-webkit-scrollbar {
     overflow-y: hidden;
     margin: 0;
     text-align: center;
-    color: black;
+
 }
 
-.about-head-3 {
+.about-head-3 ,.about-head-3-1 {
     font-family: 'Zen Maru Gothic', serif;
 
     margin: 0;
     padding: 5% 0%;
     width: 100%;
 
-    font-weight: light;
-    background-color: rgb(236, 233, 233);
+    font-weight: bold;
 
+}
+.about-head-3-1 {
+background-color: #000000f1;color: #ffffff;
 }
 
 .slide-doc {
