@@ -1,0 +1,1 @@
+document.getElementsByClassName("light")[0].click(1);
