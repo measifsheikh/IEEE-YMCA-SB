@@ -76,7 +76,8 @@
       <div class="opening-box">
         <div class="opening-text">Welcome..  To Ieee Ymca SB</div>
 
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true"   data-netlify-recaptcha="true"
+>
           <div class="message form-group ">
              <p class="hidden" style="visibility: hidden;">
     <label>
@@ -86,6 +87,7 @@
           <textarea name="message" id="formMessage" class="form-width  form-control-lg" rows="1"
               placeholder="Get in touch"></textarea>
           </div>
+          <div data-netlify-recaptcha="true"></div>
           <div class=" submit-s  ">
             <button type="submit" ><i  class=" fa-solid fa-circle-arrow-right fa-2xl " 
                 style="color: #5a8ee2;"></i></button>
