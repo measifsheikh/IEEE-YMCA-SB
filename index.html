@@ -78,12 +78,13 @@
 
         
      
-        <form name="contact" netlify>
+        <form name="contact" method="POST" data-netlify="true">
           <div class="message form-group ">
-            <textarea type="text" name="name" id="formMessage" class="form-width  form-control-lg" rows="1"
+            
+            Message: <textarea  id="formMessage" class="form-width  form-control-lg" rows="1"
               placeholder="Get in touch"></textarea>
           </div>
-          <div type="submit" class=" submit-s  ">
+          <div class=" submit-s  ">
             <a href="#formMessage" type="submit"> <i class=" fa-solid fa-circle-arrow-right fa-2xl " 
                 style="color: #5a8ee2;"></i></a>
           </div>
