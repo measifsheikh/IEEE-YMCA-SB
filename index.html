@@ -535,33 +535,7 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
-  <script>
-    var delayInMilliseconds = 1500;
 
-    setTimeout(function () {
-
-      const counters = document.querySelectorAll('.count');
-      const speed = 10;
-      counters.forEach((counter) => {
-        const updateCount = () => {
-          const target = parseInt(counter.getAttribute('data-target'));
-          const count = parseInt(counter.innerText);
-          const increment = Math.trunc(target / speed);
-
-          if (count < target) {
-            counter.innerText = count + increment;
-            setTimeout(updateCount, 30);
-          } else {
-            counter.innerText = target;
-          }
-        };
-        updateCount();
-      });
-
-    }, delayInMilliseconds);
-
-  </script>
-<script></script>
 <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
     </script>
 <script src="home.js"></script>
