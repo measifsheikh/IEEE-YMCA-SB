@@ -1,5 +1,31 @@
 document.getElementsByClassName("light")[0].click(1);
 
+    var delayInMilliseconds = 1500;
+
+    setTimeout(function () {
+
+      const counters = document.querySelectorAll('.count');
+      const speed = 10;
+      counters.forEach((counter) => {
+        const updateCount = () => {
+          const target = parseInt(counter.getAttribute('data-target'));
+          const count = parseInt(counter.innerText);
+          const increment = Math.trunc(target / speed);
+
+          if (count < target) {
+            counter.innerText = count + increment;
+            setTimeout(updateCount, 30);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        updateCount();
+      });
+
+    }, delayInMilliseconds);
+
+ 
+
 $( ".light" ).on("click", function() {
   if( $( "#nav11" ).hasClass( "dark" )) {
       $( "#nav11" ).removeClass( "dark" );
