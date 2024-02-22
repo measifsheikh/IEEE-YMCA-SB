@@ -1,5 +1,5 @@
 
-let  pageHeight = document.body.scrollHeight - window.innerWidth; 
+
 let  scrol = document.getElementById('inner-progressbar');
 let progress ;
 var element = document.getElementById("main");
