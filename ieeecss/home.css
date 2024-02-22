@@ -233,8 +233,8 @@
     font-weight: 900;
     font-style: normal;
     animation:
-        typing 3.5s steps(40, end),
-        blink-caret .70s step-end 5,
+        typing 1.3s steps(30, end),
+        blink-caret .20s step-end 5,
         textane 15s ease infinite;
 }
 
